@@ -216,7 +216,7 @@ void heartBeatPing(){
   }
 
   StaticJsonDocument<136> doc;
-  doc[F("id")] = StationID;
+  doc[F("id")] = STID;
   doc[F("Alt")] = altitude;
   doc[F("pkts")] = packetCount;
   doc[F("Bat")] = modem.getBattPercent();
